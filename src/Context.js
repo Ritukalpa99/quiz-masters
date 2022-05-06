@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext } from "react";
 
 const table = {
   sports: 21,
@@ -8,11 +8,6 @@ const table = {
 };
 
 const API_ENDPOINT = "https://opentdb.com/api.php?";
-
-const tempUrl =
-  "https://opentdb.com/api.php?amount=10&category=21&difficulty=easy&type=multiple";
-const errorUrl =
-  "https://opentdb.com/api.php?amount=50&category=24&difficulty=medium";
 
 const AppContext = React.createContext();
 
@@ -77,10 +72,7 @@ const AppProvider = ({ children }) => {
     setCorrect(0);
     setIsModalOpen(false);
   };
-  /*
-    useEffect(() => {
-         fetchQuestion(tempUrl)
-    }, [])*/
+
   const handleChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
