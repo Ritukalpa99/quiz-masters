@@ -139,12 +139,13 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url(img/background-img.png);
 }
 .quiz {
   width: 90vw;
   max-width: var(--max-width);
   margin: 4rem auto;
-  background: var(--clr-white);
+  background: var(--clr-grey-10);
   border-radius: var(--radius);
   padding: 3rem;
 }
@@ -288,7 +289,7 @@ Loading
 }
 
 .modal-content {
-  background: var(--clr-white);
+  background: var(--clr-grey-10);
   width: 90vw;
   max-width: var(--fixed-width);
   padding: 3rem;

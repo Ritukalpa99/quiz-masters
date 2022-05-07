@@ -6,7 +6,7 @@ const SetupForm = () => {
     <main>
       <section className="quiz quiz-small">
         <form className="setup-form">
-          <h2>Setup QUiz</h2>
+          <h2>Quiz Masters</h2>
           {/* amount */}
           <div className="form-control">
             <label htmlFor="amount">number of questions</label>
@@ -21,12 +21,7 @@ const SetupForm = () => {
               max={50}
             />
           </div>
-          {error && (
-            <p className="error">
-              {" "}
-              can't generate qustions, please try different options
-            </p>
-          )}
+
           {/* category */}
           <div className="form-control">
             <label htmlFor="category">category</label>
@@ -57,6 +52,12 @@ const SetupForm = () => {
               <option value="hard">hard</option>
             </select>
           </div>
+          {error && (
+            <p className="error">
+              {" "}
+              can't generate questions, please try different options
+            </p>
+          )}
           <button type="submit" onClick={handleSubmit} className="submit-btn">
             start
           </button>
