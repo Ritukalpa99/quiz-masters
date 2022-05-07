@@ -2,6 +2,10 @@ import axios from "axios";
 import React, { useState, useContext } from "react";
 
 const table = {
+  gk: 9,
+  books: 10,
+  films: 11,
+  music: 12,
   sports: 21,
   history: 23,
   politics: 24,
